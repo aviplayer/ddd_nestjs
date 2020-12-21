@@ -1,0 +1,34 @@
+{
+  "npmScope": "cinema",
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "cinema-web": {
+      "tags": []
+    },
+    "cinema-web-e2e": {
+      "tags": [],
+      "implicitDependencies": ["cinema-web"]
+    },
+    "cinema-back-cinema-back": {
+      "tags": []
+    },
+    "cinema-back": {
+      "tags": []
+    },
+    "cinema-domain": {
+      "tags": []
+    },
+    "cinema-infrastructure": {
+      "tags": []
+    }
+  }
+}
